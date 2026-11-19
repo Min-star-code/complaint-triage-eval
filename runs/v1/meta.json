@@ -1,0 +1,19 @@
+{
+  "prompt": "prompts/v1.md",
+  "rules": "none",
+  "model": "gemini:gemini-3.5-flash-lite",
+  "temperature": 0,
+  "runs": 3,
+  "items": 54,
+  "scans": "included (OCR pass added after Tesseract was installed)",
+  "ran_at": "2026-11-18T18:13:25-05:00",
+  "wall_seconds": 437,
+  "merged_passes": [
+    {
+      "ids": "C051,C052,C053,C054",
+      "model": "gemini:gemini-3.5-flash-lite",
+      "ran_at": "2026-11-18T19:05:20-05:00",
+      "note": "added in a later pass"
+    }
+  ]
+}

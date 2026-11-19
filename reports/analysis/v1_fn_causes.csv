@@ -1,0 +1,2 @@
+id,split,cause,detail
+C020,dev,vague wording + rule gap,"Complaint gives no facts (""they did something to my son at the station""). Labeling guide says: when too vague, use the worst plausible reading. Prompt v1 never said this, so the model chose Medium in run 1 and High in runs 2-3. It was still routed to human review via needs_review, so it was a model miss but not a safety miss."

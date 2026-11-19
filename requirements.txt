@@ -1,0 +1,8 @@
+google-genai==3.6.1
+openai==3.55.1
+pillow==13.0.0
+pydantic==2.14.3
+pymupdf==1.28.2
+pytesseract==0.3.13
+pytest==9.2.0
+python-dotenv==1.2.4

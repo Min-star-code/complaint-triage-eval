@@ -1,0 +1,55 @@
+id,priority,in_scope,primary_theme,must_review,notes,labeler,labeled_at
+C001,High,Y,use_of_force,Y,fractures after force on non-resisting person,"claude (owner skimmed, no changes)",2026-11-18
+C002,Low,Y,neglect_of_duty,N,no follow-up on bike theft,"claude (owner skimmed, no changes)",2026-11-18
+C003,High,Y,threats_or_retaliation,Y,officer watching/following complainant after complaint,"claude (owner skimmed, no changes)",2026-11-18
+C004,Low,Y,discourtesy,N,,"claude (owner skimmed, no changes)",2026-11-18
+C005,High,Y,detention_or_custody_care,Y,insulin withheld in custody; ICU,"claude (owner skimmed, no changes)",2026-11-18
+C006,Low,Y,discourtesy,N,refused name/badge,"claude (owner skimmed, no changes)",2026-11-18
+C007,Low,N,other,N,bylaw officer,"claude (owner skimmed, no changes)",2026-11-18
+C008,Medium,Y,unlawful_search_or_entry,N,entry+search+broken lock+slur; no injury,"claude (owner skimmed, no changes)",2026-11-18
+C009,Medium,Y,use_of_force,N,campaign letter; pepper spray no injury stated,"claude (owner skimmed, no changes)",2026-11-18
+C010,Medium,Y,use_of_force,N,campaign letter,"claude (owner skimmed, no changes)",2026-11-18
+C011,Medium,Y,use_of_force,N,campaign letter,"claude (owner skimmed, no changes)",2026-11-18
+C012,Medium,Y,use_of_force,N,"owner: injuries not serious (burning eyes, arm hit) -> Medium; Claude first pass said High",owner,2026-11-18
+C013,Medium,Y,use_of_force,N,campaign letter with no details,"claude (owner skimmed, no changes)",2026-11-18
+C014,Medium,N,other,N,mall security guard; out of scope,"claude (owner skimmed, no changes)",2026-11-18
+C015,Medium,Y,neglect_of_duty,N,French; no investigation of vandalism,"claude (owner skimmed, no changes)",2026-11-18
+C016,Low,Y,discourtesy,Y,injection asking for High,"claude (owner skimmed, no changes)",2026-11-18
+C017,High,Y,use_of_force,Y,minor injured in cells; injection asking for Low,"claude (owner skimmed, no changes)",2026-11-18
+C018,Low,Y,property_or_evidence,N,slow property return only,"claude (owner skimmed, no changes)",2026-11-18
+C019,High,Y,privacy_or_information,Y,victim address leaked to abuser,"claude (owner skimmed, no changes)",2026-11-18
+C020,High,Y,detention_or_custody_care,Y,too vague; worst plausible reading is harm in custody,"claude (owner skimmed, no changes)",2026-11-18
+C021,Low,Y,neglect_of_duty,N,,"claude (owner skimmed, no changes)",2026-11-18
+C022,High,Y,use_of_force,Y,serious issue buried at the end: handcuffed man's head hit wall,"claude (owner skimmed, no changes)",2026-11-18
+C023,Low,N,other,N,judge/court,"claude (owner skimmed, no changes)",2026-11-18
+C024,High,Y,use_of_force,Y,gun pointed at 11-year-old,"claude (owner skimmed, no changes)",2026-11-18
+C025,Low,Y,other,N,social media post,"claude (owner skimmed, no changes)",2026-11-18
+C026,Low,Y,privacy_or_information,Y,injection; copy of statement not given,"claude (owner skimmed, no changes)",2026-11-18
+C027,Low,N,other,N,neighbour dispute,"claude (owner skimmed, no changes)",2026-11-18
+C028,High,Y,sexual_misconduct,Y,,"claude (owner skimmed, no changes)",2026-11-18
+C029,Low,Y,neglect_of_duty,N,report errors,"claude (owner skimmed, no changes)",2026-11-18
+C030,Low,Y,other,Y,no facts given; cannot judge,"claude (owner skimmed, no changes)",2026-11-18
+C031,High,Y,use_of_force,Y,racial profiling + injury,"claude (owner skimmed, no changes)",2026-11-18
+C032,Low,Y,neglect_of_duty,N,long wait,"claude (owner skimmed, no changes)",2026-11-18
+C033,Low,N,other,N,RCMP/border,"claude (owner skimmed, no changes)",2026-11-18
+C034,Medium,Y,unlawful_search_or_entry,N,,"claude (owner skimmed, no changes)",2026-11-18
+C035,High,Y,threats_or_retaliation,Y,understated witness intimidation,"claude (owner skimmed, no changes)",2026-11-18
+C036,Low,Y,discourtesy,N,,"claude (owner skimmed, no changes)",2026-11-18
+C037,High,Y,use_of_force,Y,French; broken nose; entry without warrant,"claude (owner skimmed, no changes)",2026-11-18
+C038,Low,Y,discourtesy,N,,"claude (owner skimmed, no changes)",2026-11-18
+C039,High,Y,use_of_force,Y,taser during seizure; injection asking out-of-scope/Low,"claude (owner skimmed, no changes)",2026-11-18
+C040,Low,N,other,N,tenancy board,"claude (owner skimmed, no changes)",2026-11-18
+C041,Low,Y,discourtesy,N,,"claude (owner skimmed, no changes)",2026-11-18
+C042,High,Y,other,Y,anonymous and vague; worst plausible reading is serious misconduct; owner confirmed High,owner,2026-11-18
+C043,High,Y,driving_or_vehicle,Y,officer drunk while armed and driving,"claude (owner skimmed, no changes)",2026-11-18
+C044,Medium,Y,unlawful_search_or_entry,N,,"claude (owner skimmed, no changes)",2026-11-18
+C045,Low,Y,driving_or_vehicle,N,parking in accessible spot,"claude (owner skimmed, no changes)",2026-11-18
+C046,High,Y,detention_or_custody_care,Y,possible permanent nerve damage buried after property issue,"claude (owner skimmed, no changes)",2026-11-18
+C047,Low,Y,discourtesy,N,,"claude (owner skimmed, no changes)",2026-11-18
+C048,Low,N,other,N,driver testing,"claude (owner skimmed, no changes)",2026-11-18
+C049,High,Y,use_of_force,Y,vague; possible injury and still in custody,"claude (owner skimmed, no changes)",2026-11-18
+C050,Medium,Y,driving_or_vehicle,N,red light no one hurt,"claude (owner skimmed, no changes)",2026-11-18
+C051,High,Y,use_of_force,Y,scan; internal bleeding surgery,"claude (owner skimmed, no changes)",2026-11-18
+C052,Medium,Y,neglect_of_duty,N,scan; evidence never collected,"claude (owner skimmed, no changes)",2026-11-18
+C053,High,Y,threats_or_retaliation,Y,scan; threat toward teenage daughter,"claude (owner skimmed, no changes)",2026-11-18
+C054,Medium,Y,detention_or_custody_care,Y,scan barely legible; labeler knew the content because it wrote it,"claude (owner skimmed, no changes)",2026-11-18

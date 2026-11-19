@@ -1,0 +1,11 @@
+{
+  "prompt": "prompts/v2.md",
+  "rules": "none",
+  "model": "gemini:gemini-3.5-flash-lite",
+  "temperature": 0,
+  "runs": 3,
+  "items": 54,
+  "scans": "included",
+  "ran_at": "2026-11-18T19:13:23-05:00",
+  "wall_seconds": 419
+}
