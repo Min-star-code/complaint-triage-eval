@@ -50,12 +50,19 @@ cp .env.example .env          # add GEMINI_API_KEY (or Azure OpenAI settings)
 .venv/bin/python scripts/label_server.py   # labeling page on http://127.0.0.1:8765
 ```
 
-Docker (Tesseract included; **not yet built or run** — Docker is not installed on the development Mac):
+Docker (Tesseract included; built and run on 2026-11-18 with Docker Desktop on an Apple-silicon Mac):
 
 ```bash
 docker build -t triage-eval .
-docker run --rm --env-file .env triage-eval
+# runs the 46 tests, then one full evaluation run; keeps the raw runs on the host
+docker run --rm --env-file .env -e TESSERACT_CMD= -v "$PWD/runs:/app/runs" triage-eval
+.venv/bin/python scripts/run_eval.py --tag docker --report-only   # report from the saved runs
 ```
+
+`-e TESSERACT_CMD=` clears a host-only Tesseract path from `.env`, so the container uses its own
+Tesseract. The containerised run (1 run, prompt v1) is in [`reports/eval_docker.md`](reports/eval_docker.md):
+46/46 tests passed; test-set High recall 8/8, the same as the local v1 run; OCR read the three
+readable scans (char error 1.5% / 5.0% / 8.7%) and sent the fax-quality one (confidence 31.8) to human review.
 
 ## Results (Gemini 3.5 Flash Lite, temperature 0, 3 runs per version, 54 items)
 

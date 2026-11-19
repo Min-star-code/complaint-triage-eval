@@ -171,3 +171,12 @@ results is worse.
 `scripts/make_dashboard.py` builds a static `reports/dashboard.html` (metrics per version and
 every complaint with its grounded summary); `scripts/compare.py` lists every item whose priority
 or queue changed between versions and marks better / worse against the labels.
+
+### D17. Docker build verified (2026-11-18)
+Docker Desktop was installed on the development Mac, so the image was finally built (`python:3.12-slim` +
+Tesseract eng/fra, about 36 s) and run. Inside the container: 46/46 tests passed, then one full v1 run
+(54 items, 160 s). Two things learned: (1) `.env` held a host-only `TESSERACT_CMD` path, which would have
+broken OCR inside the container, so the run clears it with `-e TESSERACT_CMD=`; (2) the report is written
+inside the container, so `runs/` is mounted as a volume and the report is regenerated on the host with
+`--report-only`. Results matched the local v1 run (test High recall 8/8); OCR error rates differ slightly
+from the local Tesseract build (container: 1.5% / 5.0% / 8.7%; C054 confidence 31.8 → human review).
