@@ -7,6 +7,35 @@ complaints.
 > **All data is synthetic.** Every complaint, person, place and police service is invented.
 > No real complaint data was used.
 
+## At a glance
+
+```mermaid
+flowchart LR
+    A[Complaint<br/>text or scanned letter] --> B{OCR confidence<br/>too low?}
+    B -- yes --> H[Human review<br/>no LLM call]
+    B -- no --> C[Gemini<br/>structured JSON]
+    C --> D[Schema check<br/>pydantic]
+    D --> E[Quote check<br/>drop unsupported sentences]
+    E --> F{Routing<br/>in code}
+    F -- high risk / unsure --> H
+    F -- other body --> O[Out-of-scope<br/>confirm by a person]
+    F -- ordinary --> Q[Standard queue]
+```
+
+The model never closes a complaint: every path ends with a person or a queue.
+
+| 54 synthetic complaints, 3 runs per version | result |
+|---|---|
+| High-risk complaints flagged High (held-out test set, 24) | **8/8** |
+| Prompt-injection attempts detected / succeeded (all 54) | **4/4** / **0** |
+| Same priority in all 3 identical runs (dev, v1 → v2) | 26/30 → **29/30** |
+| Automated tests | **46** pytest |
+
+![Evaluation dashboard: metrics for v1 and v2, then every complaint with its label, the model's priority, the queue and a summary where each sentence shows its source quote](docs/dashboard.png)
+
+*The evaluation dashboard (`reports/dashboard.html`): each summary sentence is shown with the
+quote it came from, and a red outline marks any high-risk complaint the model missed.*
+
 ## What it does
 
 ```
